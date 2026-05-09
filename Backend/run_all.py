@@ -7,8 +7,8 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 
 SERVICES = [
     {"name": "Auth API     (5002)", "dir": "auth_api",   "file": "app.py"},
-    {"name": "Search API   (5001)", "dir": "chatbot_ai", "file": "app.py"},
-    {"name": "AI Asistan   (5000)", "dir": "general_ai", "file": "ai.py"},
+    {"name": "Search API   (5001)", "dir": "chatbot_ai", "file": "ai.py"},
+    {"name": "AI Asistan   (5000)", "dir": "general_ai", "file": "app.py"},
 ]
 
 procs = []
