@@ -1,0 +1,20 @@
+.transport-card { padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+.tc-head { display: flex; justify-content: space-between; align-items: center; }
+.tc-logo { height: 28px; max-width: 90px; object-fit: contain; filter: brightness(1.1); }
+.tc-source-badge {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+  color: var(--accent); background: var(--accent-dim);
+  padding: 3px 10px; border-radius: 999px;
+}
+.tc-route {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 15px; font-weight: 600;
+}
+.tc-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: var(--text-muted); }
+.tc-chip {
+  display: flex; align-items: center; gap: 4px;
+  background: var(--bg-3); border-radius: 999px; padding: 3px 10px;
+}
+.tc-footer { display: flex; align-items: center; justify-content: space-between; }
+.tc-price { font-size: 20px; font-weight: 700; }
+.tc-detail-btn { padding: 6px 14px; font-size: 12px; }

@@ -1,0 +1,69 @@
+.fav-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.fav-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.fav-tab.active { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+.fav-tab:hover  { border-color: var(--accent); color: var(--accent); }
+
+.fav-item-wrap { position: relative; }
+.fav-item-wrap.expired { opacity: 0.45; }
+.fav-item-wrap .overlay-unavailable { display: flex; align-items: center; gap: 8px; }
+
+.fav-detail-panel {
+  position: fixed;
+  top: 64px; right: 0;
+  width: min(480px, 100vw);
+  height: calc(100vh - 64px);
+  background: var(--bg-card);
+  border-left: 1.5px solid var(--border);
+  z-index: 800;
+  display: flex; flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.fav-detail-panel::-webkit-scrollbar { display: none; }
+.fav-detail-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 24px;
+  position: sticky; top: 0;
+  background: var(--bg-card);
+  z-index: 1;
+}
+.fav-detail-body { padding: 24px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.fav-detail-row { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-muted); }
+.fav-detail-price { font-size: 24px; font-weight: 800; color: var(--text); margin-top: 8px; }
+.fav-flight-leg {
+  background: var(--bg-2);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.fav-close-btn {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--bg-3);
+  color: var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition), transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
+  cursor: pointer; flex-shrink: 0;
+}
+.fav-close-btn:hover {
+  background: rgba(244,90,90,0.12); color: #f45a5a;
+  border-color: #f45a5a; transform: rotate(90deg) scale(1.12);
+}
+
